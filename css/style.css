@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	background: rgb(245, 245, 245);
+	padding-left: 80px;
+	padding-top: 44px;
+	padding-right: 100px;
+}
+
+button {
+	cursor: pointer;
+}
+
+header {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav {
+	padding: 20px 0;
+	width: 60%;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-between;
+	padding: 0;
+	align-items: center;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav li {
+	margin: 0 15px;
+	/* Добавим внешние отступы для элементов списка */
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.nav li a {
+	text-decoration: none;
+}
+
+#start-btn {
+	border: none;
+	border-radius: 35px;
+	box-shadow: 0px 20px 99px 0px rgba(11, 20, 101, 0.12);
+	background: linear-gradient(220.91deg, rgb(252, 128, 64) 22.134%, rgb(170, 60, 241) 114.788%);
+	width: 218px;
+	height: 88px;
+	color: rgb(251, 252, 254);
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.main {
+	display: flex;
+	width: calc(100% + 100px);
+	/* Компенсируем правый padding для body */
+	margin-right: -100px;
+	/* Сдвигаем элемент обратно */
+}
+
+.start {
+	flex-grow: 1;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.main_text p {
+	font-family: Poppins;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 90px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin: 0;
+}
+
+.main_text span {
+	display: inline-block;
+	/* Делаем элемент строчным блоком */
+	padding: 0 30px;
+	/* Добавляем внутренние отступы */
+	border: none;
+	/* Устанавливаем обводку */
+	font-size: 60px;
+	/* Размер шрифта */
+	/* Фон */
+	border-radius: 40px;
+	background: rgb(243, 97, 204);
+	color: white;
+}
+
+#sec_text {
+	opacity: 0.5;
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 39px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.start button {
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0px 15px 77px 0px rgba(255, 148, 227, 0.69);
+	background: linear-gradient(193.08deg, rgb(250, 155, 223) 5.554%, rgb(243, 96, 205) 115.952%);
+	padding: 30px 10px;
+	margin-top: 20px;
+	width: 50%;
+	color: rgb(255, 255, 255);
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+
+.rectangle {
+	background: rgb(250, 156, 226);
+	flex-grow: 3;
+	width: 100%;
+	border-top-left-radius: 321px;
+	border-bottom-left-radius: 321px;
+}
+
+.second-text {
+	display: flex;
+	flex-direction: row;
+	margin-top: 129px;
+	border-radius: 124px;
+	box-shadow: 0px 15px 77px 0px rgba(255, 148, 227, 0.34);
+	background: linear-gradient(193.08deg, rgb(250, 155, 223) 1.376%, rgb(243, 96, 205) 122.906%);
+	padding-left: 89px;
+	padding-top: 101px;
+	padding-bottom: 102px;
+	margin-bottom: 61px;
+}
+
+.left-part {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.left-part p {
+	color: rgb(251, 252, 254);
+	font-family: Poppins;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 90px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.left-part button {
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0px 15px 77px 0px rgba(255, 148, 227, 0.69);
+	color: rgb(246, 122, 213);
+	padding: 30px 10px;
+	margin-top: 20px;
+	width: 50%;
+	background: rgb(255, 255, 255);
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.right-part {
+	flex-grow: 3;
+	display: flex;
+	flex-direction: column;
+	background: rgb(249, 160, 224);
+	gap: 30px;
+	padding: 64px 164px 64px 64px;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+}
+
+#rigth-top-icon,
+#left-top-icon,
+#rigth-bottom-icon,
+#left-bottom-icon {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 37px;
+	padding: 40px;
+}
+
+#left-top-icon {
+	background-color: rgb(194, 80, 191);
+}
+
+#left-bottom-icon {
+	background-color: rgb(239, 201, 68);
+}
+
+#rigth-top-icon {
+	background-color: rgb(239, 201, 68);
+}
+
+#rigth-bottom-icon {
+	background-color: rgb(239, 105, 68);
+}
+
+#first-row,
+#second-row {
+	display: flex;
+	gap: 30px;
+}
+
+/* Изменение полосу прокрутки */
+/* Общий стиль для всех браузеров */
+body {
+	scrollbar-width: thin;
+	/* Firefox */
+	scrollbar-color: gray lightgray;
+	/* Firefox */
+}
+
+/* Для Webkit-браузеров (Chrome, Safari) */
+::-webkit-scrollbar {
+	width: 10px;
+	/* ширина вертикальной полосы прокрутки */
+	height: 16px;
+	/* высота горизонтальной полосы прокрутки */
+}
+
+::-webkit-scrollbar-track {
+	background: lightgray;
+	/* цвет фона полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: gray;
+	/* цвет бегунка полосы прокрутки */
+	border-radius: 10px;
+	/* закругленные углы бегунка */
+	border: 2px solid lightgray;
+	/* пространство между бегунком и краем полосы прокрутки */
+}
+
+/* Для изменения цвета при наведении мыши */
+::-webkit-scrollbar-thumb:hover {
+	background-color: darkgray;
+	width: 30 px;
+	/* увеличенная ширина вертикальной полосы прокрутки */
+	height: 16px;
+	/* увеличенная высота горизонтальной полосы прокрутки */
+}
+
+/* конец стилизации полосы покрутки */
+
+.des-bus {
+	display: flex;
+	margin-top: 91px;
+	gap: 50px;
+
+}
+
+.frame {
+	flex-grow: 1;
+	display: flex;
+	border-radius: 90px;
+	background: rgb(247, 123, 214);
+	flex-basis: 30%;
+}
+
+.text {
+	flex-basis: 50%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.text h3 {
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 83px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin: 0;
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+.text p {
+	display: inline-block;
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-align: left;
+	opacity: 0.5;
+}
+
+.line {
+	margin-bottom: 100px;
+	width: 70%;
+	border-radius: 99px;
+	height: 10px;
+	background: rgb(247, 128, 215);
+}
+
+.new-skills {
+	margin-top: 163px;
+	display: flex;
+	border-radius: 90px;
+	background-color: #F77BD6;
+	padding: 100px 0;
+	gap: 30px;
+}
+
+.oval {
+	flex-grow: 1;
+	flex-basis: 30%;
+	border-top-right-radius: 190px;
+	border-bottom-right-radius: 190px;
+	background-color: rgb(255, 169, 232);
+}
+
+#left {
+	flex-grow: 2;
+	flex-basis: 70%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#left h3 {
+	color: rgb(251, 252, 254);
+	font-family: Poppins;
+	font-size: 65px;
+	font-weight: 700;
+	line-height: 90px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin: 0;
+}
+
+#left p {
+	opacity: 0.5;
+	color: rgb(251, 252, 254);
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 45px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+footer {
+	display: flex;
+	margin-top: 226px;
+	gap: 80px;
+}
+
+.join {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.join h3 {
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 83px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin: 0;
+}
+
+.join p {
+	opacity: 0.5;
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 33px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.links {
+	display: flex;
+	gap: 80px;
+	flex-direction: column;
+}
+
+.all {
+	display: flex;
+	gap: 80px;
+}
+
+.partnershop,
+.about,
+.support {
+	display: flex;
+	flex-direction: column;
+}
+
+.partnershop h5,
+.about h5,
+.support h5 {
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 33px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin: 0;
+}
+
+.partnershop ol,
+.about ol,
+.support ol {
+	list-style-type: none;
+	padding-left: 0;
+	/* Убираем отступ слева у списка */
+}
+
+.partnershop li,
+.about li,
+.support li {
+	opacity: 0.5;
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 33px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.right h4 {
+	color: rgb(0, 28, 84);
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin: 0;
+}
+
+.partnershop li a,
+.about li a,
+.support li a {
+	text-decoration: none;
+}
