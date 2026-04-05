@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: rgb(245, 245, 245);
 	padding-left: 80px;
@@ -486,4 +490,269 @@ footer {
 .about li a,
 .support li a {
 	text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+	body {
+		padding-left: 40px;
+		padding-top: 30px;
+		padding-right: 40px;
+	}
+
+	header,
+	.main,
+	.second-text,
+	.des-bus,
+	.new-skills,
+	footer {
+		flex-direction: column;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	#start-btn {
+		width: 240px;
+		height: 74px;
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.main {
+		width: 100%;
+		margin-right: 0;
+		gap: 30px;
+	}
+
+	.main_text p,
+	.main_text span {
+		font-size: 48px;
+		line-height: 70px;
+	}
+
+	#sec_text {
+		font-size: 22px;
+		line-height: 34px;
+	}
+
+	.start button,
+	.left-part button {
+		width: 280px;
+		padding: 24px 10px;
+		font-size: 22px;
+		line-height: 33px;
+	}
+
+	.rectangle {
+		min-height: 320px;
+	}
+
+	.second-text {
+		padding: 50px;
+		gap: 30px;
+	}
+
+	.left-part p {
+		font-size: 40px;
+		line-height: 64px;
+		margin: 0;
+	}
+
+	.right-part {
+		padding: 40px;
+		border-radius: 60px;
+	}
+
+	.text h3,
+	#left h3,
+	.join h3 {
+		font-size: 42px;
+		line-height: 62px;
+	}
+
+	.text p,
+	#left p,
+	.join p {
+		font-size: 22px;
+		line-height: 34px;
+	}
+
+	.frame {
+		min-height: 320px;
+	}
+
+	.new-skills {
+		padding: 70px 0;
+	}
+
+	.oval {
+		min-height: 220px;
+	}
+
+	.all {
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-right: 20px;
+	}
+
+	header {
+		gap: 20px;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	.nav {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 12px 18px;
+	}
+
+	.nav li {
+		margin: 0;
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	#start-btn,
+	.start button,
+	.left-part button {
+		width: 100%;
+		max-width: 280px;
+	}
+
+	.main_text p,
+	.main_text span {
+		font-size: 36px;
+		line-height: 52px;
+	}
+
+	.main_text span {
+		padding: 0 18px;
+		border-radius: 30px;
+	}
+
+	#sec_text {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.start button,
+	.left-part button {
+		padding: 20px 10px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.rectangle {
+		min-height: 220px;
+		border-top-left-radius: 180px;
+		border-bottom-left-radius: 180px;
+	}
+
+	.second-text {
+		margin-top: 80px;
+		margin-bottom: 40px;
+		padding: 30px 25px;
+		border-radius: 50px;
+	}
+
+	.left-part p {
+		font-size: 32px;
+		line-height: 48px;
+	}
+
+	.right-part {
+		padding: 25px;
+		border-radius: 40px;
+		gap: 20px;
+	}
+
+	#first-row,
+	#second-row {
+		gap: 20px;
+	}
+
+	#rigth-top-icon,
+	#left-top-icon,
+	#rigth-bottom-icon,
+	#left-bottom-icon {
+		padding: 24px;
+	}
+
+	#left-top-icon img,
+	#rigth-top-icon svg,
+	#left-bottom-icon svg,
+	#rigth-bottom-icon svg {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.des-bus {
+		margin-top: 60px;
+		gap: 30px;
+	}
+
+	.frame {
+		min-height: 220px;
+		border-radius: 60px;
+	}
+
+	.text h3,
+	#left h3,
+	.join h3 {
+		font-size: 32px;
+		line-height: 48px;
+	}
+
+	.text p,
+	#left p,
+	.join p,
+	.right h4,
+	.partnershop li,
+	.about li,
+	.support li {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.line {
+		margin-bottom: 40px;
+		width: 100%;
+	}
+
+	.new-skills {
+		margin-top: 100px;
+		padding: 45px 0;
+		border-radius: 60px;
+		gap: 25px;
+	}
+
+	.oval {
+		min-height: 140px;
+		flex-basis: auto;
+	}
+
+	#left {
+		gap: 15px;
+	}
+
+	footer {
+		margin-top: 120px;
+		gap: 35px;
+	}
+
+	.links,
+	.all {
+		gap: 30px;
+	}
 }
